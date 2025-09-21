@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from eml_reader import EmlReader
+from eml_getter import EmlReader
 
 
 def create_eml(directory: Path, name: str, content: str) -> Path:
